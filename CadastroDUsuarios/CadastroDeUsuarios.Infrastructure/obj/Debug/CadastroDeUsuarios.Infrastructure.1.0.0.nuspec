@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CadastroDeUsuarios.Infrastructure</id>
+    <version>1.0.0</version>
+    <authors>CadastroDeUsuarios.Infrastructure</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Infrastructure.dll" target="lib\net7.0\CadastroDeUsuarios.Infrastructure.dll" />
+  </files>
+</package>

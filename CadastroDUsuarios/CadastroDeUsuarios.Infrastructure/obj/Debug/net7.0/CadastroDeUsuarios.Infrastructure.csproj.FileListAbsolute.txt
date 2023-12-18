@@ -1,0 +1,17 @@
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Infrastructure.deps.json
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Infrastructure.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Infrastructure.pdb
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.AssemblyInfoInputs.cache
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.AssemblyInfo.cs
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\refint\CadastroDeUsuarios.Infrastructure.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.pdb
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\ref\CadastroDeUsuarios.Infrastructure.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Infrastructure.runtimeconfig.json
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Domain.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\bin\Debug\net7.0\CadastroDeUsuarios.Domain.pdb
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.csproj.AssemblyReference.cache
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.csproj.CopyComplete
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Infrastructure\obj\Debug\net7.0\CadastroDeUsuarios.Infrastructure.genruntimeconfig.cache

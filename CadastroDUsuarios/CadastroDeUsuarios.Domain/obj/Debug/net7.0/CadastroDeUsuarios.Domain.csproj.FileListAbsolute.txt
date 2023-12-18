@@ -1,0 +1,11 @@
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\bin\Debug\net7.0\CadastroDeUsuarios.Domain.deps.json
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\bin\Debug\net7.0\CadastroDeUsuarios.Domain.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\bin\Debug\net7.0\CadastroDeUsuarios.Domain.pdb
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\CadastroDeUsuarios.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\CadastroDeUsuarios.Domain.AssemblyInfoInputs.cache
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\CadastroDeUsuarios.Domain.AssemblyInfo.cs
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\CadastroDeUsuarios.Domain.csproj.CoreCompileInputs.cache
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\CadastroDeUsuarios.Domain.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\refint\CadastroDeUsuarios.Domain.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\CadastroDeUsuarios.Domain.pdb
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Domain\obj\Debug\net7.0\ref\CadastroDeUsuarios.Domain.dll
