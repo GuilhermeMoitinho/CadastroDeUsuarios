@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CadastroDeUsuarios.Application.Validator
 {
-    public class ComfirmaSenhaValaidator : AbstractValidator<PassWordConfirm>
+    public class ConfirmaSenhaValidator : AbstractValidator<PassWordConfirm>
     {
-        public ComfirmaSenhaValaidator()
+        public ConfirmaSenhaValidator()
         {
 
             RuleFor(custumer => custumer.EmailEsqueciSenha).NotNull().WithMessage("Email não pode ser vazio!").NotEmpty();
