@@ -15,3 +15,4 @@ D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsu
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Application\obj\Debug\net7.0\refint\CadastroDeUsuarios.Application.dll
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Application\obj\Debug\net7.0\CadastroDeUsuarios.Application.pdb
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Application\obj\Debug\net7.0\ref\CadastroDeUsuarios.Application.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.Application\obj\Debug\net7.0\CadastroDeUsuarios.Application.sourcelink.json

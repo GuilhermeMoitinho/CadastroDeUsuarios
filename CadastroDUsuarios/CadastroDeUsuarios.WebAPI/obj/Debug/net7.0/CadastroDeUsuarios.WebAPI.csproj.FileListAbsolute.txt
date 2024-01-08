@@ -84,3 +84,7 @@ D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsu
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\CadastroDeUsuarios.CrossCutting.IoC.dll
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\CadastroDeUsuarios.Application.pdb
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\CadastroDeUsuarios.CrossCutting.IoC.pdb
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\obj\Debug\net7.0\CadastroDeUsuarios.WebAPI.sourcelink.json
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\FluentValidation.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

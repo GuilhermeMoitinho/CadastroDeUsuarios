@@ -5,7 +5,8 @@ import App from './App.jsx';
 import './index.css';
 import InforUser from './components/InforUser.jsx';
 import Login from './components/Login.jsx';// Import the PrivateRoute component
-import PrivateRoute from './components/PrivateRoute/PrivateRoute .jsx';
+import AlterarSenha from './components/UsuarioInformacoes.jsx';
+import PrivateRoute from './components/PrivateRoute/PrivateRouteLogin .jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           path="/User"
           element={<PrivateRoute element={<InforUser />} />}
         />
+
+        <Route
+          path="/AlterarSenha"
+          element={<PrivateRoute element={<AlterarSenha />} />}
+        />
+       
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -11,6 +11,10 @@ using CadastroDeUsuarios.Application.Auth;
 using System.Text;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Options;
+using CadastroDeUsuarios.Domain.Entity;
+using CadastroDeUsuarios.Infrastructure.Context;
+using FluentValidation.AspNetCore;
+using CadastroDeUsuarios.Application.Validator;
 
 namespace CadastroDeUsuarios.WebAPI
 {
@@ -24,11 +28,16 @@ namespace CadastroDeUsuarios.WebAPI
             builder.Services.AddDbContext<CadastroContext>
                     (op => op.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
+            builder.Services.AddDbContext<EmployeeContext>
+                    (op => op.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
-            builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
+            builder.Services.AddScoped<IUsuarioService, UsuarioService>(); 
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddScoped<TokenService>();
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UsuarioValidator>());
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>

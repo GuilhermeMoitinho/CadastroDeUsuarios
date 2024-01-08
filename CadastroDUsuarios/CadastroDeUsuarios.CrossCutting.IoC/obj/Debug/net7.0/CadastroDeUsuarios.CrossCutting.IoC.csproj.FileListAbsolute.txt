@@ -17,3 +17,4 @@ D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsu
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.CrossCutting.IoC\obj\Debug\net7.0\refint\CadastroDeUsuarios.CrossCutting.IoC.dll
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.CrossCutting.IoC\obj\Debug\net7.0\CadastroDeUsuarios.CrossCutting.IoC.pdb
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.CrossCutting.IoC\obj\Debug\net7.0\ref\CadastroDeUsuarios.CrossCutting.IoC.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.CrossCutting.IoC\obj\Debug\net7.0\CadastroDeUsuarios.CrossCutting.IoC.sourcelink.json

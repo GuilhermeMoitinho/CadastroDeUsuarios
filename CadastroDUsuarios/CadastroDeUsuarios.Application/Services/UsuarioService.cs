@@ -5,6 +5,7 @@ using CadastroDeUsuarios.Application.ServiceResponse;
 using CadastroDeUsuarios.Domain.Entity;
 using CadastroDeUsuarios.WebAPI.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,10 +40,10 @@ namespace CadastroDeUsuarios.Application.Services
             return result;
         }
 
-        public async Task<Usuario?> Obter(string email)
+        public async Task<Usuario?> Obter(string email, string senha)
         {
             var user = await _contexto.usuarios.AsNoTracking()
-                                           .Where(u => u.Email == email)
+                                           .Where(u => u.Email == email && u.Senha == senha)
                                            .FirstOrDefaultAsync();
 
             return user;
@@ -59,6 +60,17 @@ namespace CadastroDeUsuarios.Application.Services
             };
 
             return result;
+        }
+
+        public async Task EsqueciSenha(PassWordConfirm passWordConfirm)
+        {
+            var User = await _contexto.usuarios.FirstOrDefaultAsync(user => passWordConfirm.EmailEsqueciSenha == user.Email);
+
+            User.Senha = passWordConfirm.ConfirmPassWord;
+
+
+            _contexto.usuarios.Update(User);
+            await _contexto.SaveChangesAsync();
         }
     }
 }

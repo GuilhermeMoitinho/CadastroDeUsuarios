@@ -7,6 +7,7 @@ const InforUser = () => {
   let redirect = useNavigate();
   const URL = "http://localhost:5193/api/employees";
   const token = localStorage.getItem("token");
+  const usuario = localStorage.getItem("NomeUsuario")
 
   const headers = {
     headers: {
@@ -17,7 +18,7 @@ const InforUser = () => {
   useEffect(() => {
     RequestGetAPI(URL, headers)
       .then(response => {
-        setDados(response.data.lista);
+        setDados(response.data.lista.result);
 
       })
       .catch(error => {
@@ -27,22 +28,34 @@ const InforUser = () => {
   }, []);
 
   useEffect(() => {
-    console.log(dados); // mostrará o array com os dados da API
+      console.log(dados); // mostrará o array com os dados da API
   }, [dados]);
 
 
   return (
     <div>
-      <h1>Informacoes dos Funcionarios</h1>
+      <Link to="/AlterarSenha">Alterar sua senha</Link>
+      <p>User: {usuario}</p>
+      <h2>Informacoes dos Funcionarios</h2>
       
 
       {dados.length > 0 &&
       dados.map((item, index) => (
-        <div key={index}>
-          <p>Nome do Funcionario: {item.name}</p>
+    <div className='ListaDeFuncionarios'key={index}>
+      <p>Nome do Funcionário: {item.name}</p>
+      <p>Idade do Funcionário: {item.age}</p>
+      {item.imageURL && (
+        <div>
+          <p>URL da Imagem do Funcionário: {item.imageURL}</p>
           <img src={item.imageURL} alt="Imagem" />
+          
+          <div className="DivisaInfo"></div>
+        </div>
+        
+      )}
     </div>
-  ))}
+  ))
+}
 
 
 

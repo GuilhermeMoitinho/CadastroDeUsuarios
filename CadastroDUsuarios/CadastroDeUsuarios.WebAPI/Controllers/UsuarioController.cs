@@ -2,6 +2,7 @@
 using CadastroDeUsuarios.Application.Interfaces;
 using CadastroDeUsuarios.Application.ServiceResponse;
 using CadastroDeUsuarios.Domain.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/users")]
@@ -24,7 +25,7 @@ public class UsuarioController : ControllerBase
     [HttpPost("login")] // Adicione um sufixo "login"
     public async Task<IActionResult> Login(Usuario userLogin)
     {
-        var user = await _usuarioService.Obter(userLogin.Email);
+        var user = await _usuarioService.Obter(userLogin.Email, userLogin.Senha);
 
         if (user == null)
         {
@@ -34,5 +35,16 @@ public class UsuarioController : ControllerBase
         }
 
         return Ok(await _usuarioService.Login(userLogin));
+    }
+
+    [Authorize]
+    [HttpPut("esqueciSenha")]
+    public async Task<IActionResult> EsqueciSenha(PassWordConfirm mudarSenha)
+    {
+        if (mudarSenha == null) return BadRequest();
+
+         await _usuarioService.EsqueciSenha(mudarSenha);
+
+        return Ok();
     }
 }

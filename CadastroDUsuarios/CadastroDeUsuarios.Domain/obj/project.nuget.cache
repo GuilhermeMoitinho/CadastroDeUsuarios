@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "r2O/jw4bY5SMSVBeL/EwTvfQxIe70CyHL6ipbTQgWwGT6G0eXW83jJGm1rFZ/IPUU8DqmfIIxqESfHvsIMmn/w==",
+  "dgSpecHash": "x2QaJ1KIz5gC0yPH9D/VBLSoigT23Py5oCr/ooen5X9Pz1xwSXVrehZ+eNyszM/OGC3nqut88RNl33Ddza6X4g==",
   "success": true,
   "projectFilePath": "D:\\Estudos\\EstudandoNoMomento\\CadastroDeUsuarios\\CadastroDUsuarios\\CadastroDeUsuarios.Domain\\CadastroDeUsuarios.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -3,7 +3,7 @@
 
 import {  Navigate } from 'react-router-dom';
 
-const PrivateRoute = ({ element }) => {
+const PrivateRouteLogin  = ({ element }) => {
   const token = localStorage.getItem('token');
 
   if (!token) {
@@ -13,4 +13,4 @@ const PrivateRoute = ({ element }) => {
   return <>{element}</>;
 };
 
-export default PrivateRoute;
+export default PrivateRouteLogin;

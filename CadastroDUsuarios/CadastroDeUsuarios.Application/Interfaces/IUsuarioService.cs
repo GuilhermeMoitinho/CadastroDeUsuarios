@@ -13,7 +13,8 @@ namespace CadastroDeUsuarios.Application.Interfaces
     {
         Task<UsuarioLoginResponseContract> Cadastro(Usuario UserCadastro);
         Task<UsuarioLoginResponseContract> Login(Usuario userLogin);
+        Task EsqueciSenha(PassWordConfirm passWordConfirm);
 
-        Task<Usuario?> Obter(string email);
+        Task<Usuario?> Obter(string email, string senha);
     }
 }

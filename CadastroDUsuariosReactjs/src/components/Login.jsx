@@ -33,6 +33,7 @@ const Login = () => {
         let token = response.data.token
 
         localStorage.setItem('token', token);
+        localStorage.setItem("NomeUsuario", email)
         redirect("/User")
         // Handle successful login here
       })

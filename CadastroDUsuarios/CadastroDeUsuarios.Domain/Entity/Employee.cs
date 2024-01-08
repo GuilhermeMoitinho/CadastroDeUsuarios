@@ -11,9 +11,9 @@ namespace CadastroDeUsuarios.Domain.Entity
     {
         [Key]
         public Guid Id { get; private set; } 
-        public string name { get; private set; }
-        public int age { get; private set; }
-        public string? photo { get; private set; }
+        public string name { get; set; }
+        public int age { get; set; }
+        public string? photo { get; set; }
 
         public string imageURL { get; set; }
 
