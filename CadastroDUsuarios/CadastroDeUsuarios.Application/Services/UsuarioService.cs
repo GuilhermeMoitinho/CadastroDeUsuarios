@@ -42,6 +42,17 @@ namespace CadastroDeUsuarios.Application.Services
             return user;
         }
 
+        public async Task<Usuario?> ObterEmail(string email)
+        {
+            var userEmail = await _contexto.usuarios.AsNoTracking()
+                                           .Where(u => u.Email == email)
+                                           .FirstOrDefaultAsync();
+
+            return userEmail;
+        }
+
+
+
         public async Task<UsuarioLoginResponseContract> Login(Usuario userLogin)
         {
 

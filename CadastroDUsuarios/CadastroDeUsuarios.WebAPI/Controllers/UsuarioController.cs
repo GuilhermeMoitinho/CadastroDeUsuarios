@@ -16,10 +16,12 @@ public class UsuarioController : ControllerBase
         _usuarioService = usuarioService;
     }
 
-    [HttpPost("cadastro")] // Adicione um sufixo "cadastro"
+    [HttpPost("cadastro")]
     public async Task<IActionResult> Cadastro(Usuario userCadastro)
     {
-        if (userCadastro is null) return BadRequest();
+        var ObterUsserExistente = await _usuarioService.ObterEmail(userCadastro.Email);
+
+        if (ObterUsserExistente != null) return BadRequest();
 
         var result = await _usuarioService.Cadastro(userCadastro);
 
@@ -45,7 +47,7 @@ public class UsuarioController : ControllerBase
         return Ok(await _usuarioService.BuscarTodosUsuarios());
     }
 
-    [HttpPost("login")] // Adicione um sufixo "login"
+    [HttpPost("login")] 
     public async Task<IActionResult> Login(Usuario userLogin)
     {
         var user = await _usuarioService.Obter(userLogin.Email, userLogin.Senha);

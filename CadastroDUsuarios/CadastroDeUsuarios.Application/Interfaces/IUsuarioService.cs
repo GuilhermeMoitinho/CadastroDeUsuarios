@@ -12,5 +12,7 @@ namespace CadastroDeUsuarios.Application.Interfaces
         Task EsqueciSenha(PassWordConfirm passWordConfirm);
 
         Task<Usuario?> Obter(string email, string senha);
+
+        Task<Usuario?> ObterEmail(string email);
     }
 }
