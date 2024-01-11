@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CadastroDeUsuarios.Application.ServiceResponse;
-using CadastroDeUsuarios.Application.AutoMapper.Mappings;
+﻿using CadastroDeUsuarios.Application.ServiceResponse;
 using CadastroDeUsuarios.Domain.Entity;
 
 namespace CadastroDeUsuarios.Application.Interfaces
@@ -13,6 +7,8 @@ namespace CadastroDeUsuarios.Application.Interfaces
     {
         Task<UsuarioLoginResponseContract> Cadastro(Usuario UserCadastro);
         Task<UsuarioLoginResponseContract> Login(Usuario userLogin);
+        Task<Usuario> BuscarUsuariosPorId(Guid id);
+        Task<IEnumerable<Usuario>> BuscarTodosUsuarios();
         Task EsqueciSenha(PassWordConfirm passWordConfirm);
 
         Task<Usuario?> Obter(string email, string senha);

@@ -1,16 +1,9 @@
 ﻿using CadastroDeUsuarios.Application.Auth;
-using CadastroDeUsuarios.Application.AutoMapper.Mappings;
 using CadastroDeUsuarios.Application.Interfaces;
 using CadastroDeUsuarios.Application.ServiceResponse;
 using CadastroDeUsuarios.Domain.Entity;
 using CadastroDeUsuarios.WebAPI.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CadastroDeUsuarios.Application.Services
 {
@@ -71,6 +64,20 @@ namespace CadastroDeUsuarios.Application.Services
 
             _contexto.usuarios.Update(User);
             await _contexto.SaveChangesAsync();
+        }
+
+        public async Task<Usuario> BuscarUsuariosPorId(Guid id)
+        {
+            var usuarioEncontrado = _contexto.usuarios.FirstOrDefaultAsync(user => user.Id == id);
+
+            return await usuarioEncontrado;
+        }
+
+        public async Task<IEnumerable<Usuario>> BuscarTodosUsuarios()
+        {
+            var TodosUsuarios = await _contexto.usuarios.ToListAsync();
+
+            return TodosUsuarios;
         }
     }
 }

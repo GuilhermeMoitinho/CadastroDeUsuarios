@@ -19,7 +19,30 @@ public class UsuarioController : ControllerBase
     [HttpPost("cadastro")] // Adicione um sufixo "cadastro"
     public async Task<IActionResult> Cadastro(Usuario userCadastro)
     {
-        return Ok(await _usuarioService.Cadastro(userCadastro));
+        if (userCadastro is null) return BadRequest();
+
+        var result = await _usuarioService.Cadastro(userCadastro);
+
+        return CreatedAtAction(nameof(BuscarUsuariosPorId), new {id = result.Id}, result);
+    }
+
+    [Authorize]
+    [ActionName("BuscarUsuariosPorId")]
+    [HttpGet("{id}")]
+    public async Task<IActionResult> BuscarUsuariosPorId(Guid id)
+    {
+        if(id == Guid.Empty || id == null) return BadRequest();
+
+        var user = await _usuarioService.BuscarUsuariosPorId(id);
+        
+        return Ok(user);
+    }
+
+    [Authorize]
+    [HttpGet]
+    public async Task<IActionResult> BuscarTodosUsuarios()
+    {
+        return Ok(await _usuarioService.BuscarTodosUsuarios());
     }
 
     [HttpPost("login")] // Adicione um sufixo "login"
@@ -45,6 +68,6 @@ public class UsuarioController : ControllerBase
 
          await _usuarioService.EsqueciSenha(mudarSenha);
 
-        return Ok();
+        return NoContent();
     }
 }

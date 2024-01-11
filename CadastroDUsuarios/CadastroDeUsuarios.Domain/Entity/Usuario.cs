@@ -16,6 +16,6 @@ namespace CadastroDeUsuarios.Domain.Entity
         public string Senha { get; set; } = string.Empty;
 
         public DateTime? DataCadastro { get; set; } = DateTime.Now;
-        public DateTime? DataInativacao { get; set; } = DateTime.Now;
+        public DateTime? DataInativacao { get; set; } = null;
     }
 }

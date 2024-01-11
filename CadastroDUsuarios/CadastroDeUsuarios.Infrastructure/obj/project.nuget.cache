@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8OBjcrUId4QDZXTouW14tarS77HiArnWaXaY/t4PcnF5+bNc5u14YaaWaM7oFIRBYsmNJyvXM+gBuOO8xRPxag==",
+  "dgSpecHash": "WPSzg9RGAN427hUkj1pPTYmiyi2mJ7VaYLdWdKXXR+nUdAO0HOxr5fjaH99CN/M8gcYdtrsV1l/xfZpmGqIFAw==",
   "success": true,
   "projectFilePath": "D:\\Estudos\\EstudandoNoMomento\\CadastroDeUsuarios\\CadastroDUsuarios\\CadastroDeUsuarios.Infrastructure\\CadastroDeUsuarios.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -64,8 +64,8 @@
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
   ],
   "logs": []
