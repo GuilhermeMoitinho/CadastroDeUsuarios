@@ -23,7 +23,6 @@ namespace CadastroDeUsuarios.Application.Auth
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenConfig);
-            var tokenString = tokenHandler.WriteToken(token);
 
             return tokenHandler.WriteToken(token);
 

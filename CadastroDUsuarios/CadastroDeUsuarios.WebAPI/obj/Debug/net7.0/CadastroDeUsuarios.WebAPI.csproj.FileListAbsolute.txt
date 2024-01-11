@@ -88,3 +88,4 @@ D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsu
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\FluentValidation.dll
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Estudos\EstudandoNoMomento\CadastroDeUsuarios\CadastroDUsuarios\CadastroDeUsuarios.WebAPI\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

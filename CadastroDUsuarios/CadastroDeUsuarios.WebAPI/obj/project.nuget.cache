@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JfZ0yGoBx2/wxU0nf5DmVK0zYn8nbWUyY+vNVTJQc3jPpNIO3zzddv7sl/F1FtSueZ8xDZCd2eiRzwrNL62oOA==",
+  "dgSpecHash": "OegKa+2suBIBq4Javnz4gYRHbBOYWUXrLSo0JzSW6sa4ImVNPgK3fj+U6qd0mJvid2GaZouj76xDyJ4DAHPlMg==",
   "success": true,
   "projectFilePath": "D:\\Estudos\\EstudandoNoMomento\\CadastroDeUsuarios\\CadastroDUsuarios\\CadastroDeUsuarios.WebAPI\\CadastroDeUsuarios.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

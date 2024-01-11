@@ -1,4 +1,6 @@
-﻿using CadastroDeUsuarios.Application.Auth;
+﻿using AutoMapper;
+using CadastroDeUsuarios.Application.Auth;
+using CadastroDeUsuarios.Application.AutoMapper.Mappings;
 using CadastroDeUsuarios.Application.Interfaces;
 using CadastroDeUsuarios.Application.ServiceResponse;
 using CadastroDeUsuarios.Domain.Entity;
@@ -11,11 +13,13 @@ namespace CadastroDeUsuarios.Application.Services
     {
         private readonly CadastroContext _contexto;
         private readonly TokenService _tokenService;
+        private IMapper _mapper;
 
-        public UsuarioService(CadastroContext context, TokenService tokenService)
+        public UsuarioService(CadastroContext contexto, TokenService tokenService, IMapper mapper)
         {
-            _contexto = context;
+            _contexto = contexto;
             _tokenService = tokenService;
+            _mapper = mapper;
         }
 
         public async Task<UsuarioLoginResponseContract> Cadastro(Usuario UserCadastro)
@@ -53,8 +57,10 @@ namespace CadastroDeUsuarios.Application.Services
 
 
 
-        public async Task<UsuarioLoginResponseContract> Login(Usuario userLogin)
+        public async Task<UsuarioLoginResponseContract> Login(UsuarioLoginRequestContract userLoginDto)
         {
+
+            var userLogin = _mapper.Map<Usuario>(userLoginDto);
 
             var result = new UsuarioLoginResponseContract()
             {

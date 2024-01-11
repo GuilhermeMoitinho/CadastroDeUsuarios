@@ -31,6 +31,8 @@ namespace CadastroDeUsuarios.WebAPI
             builder.Services.AddDbContext<EmployeeContext>
                     (op => op.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
             builder.Services.AddScoped<IUsuarioService, UsuarioService>(); 
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();

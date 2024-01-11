@@ -1,4 +1,6 @@
-﻿using CadastroDeUsuarios.Application.Auth;
+﻿using AutoMapper;
+using CadastroDeUsuarios.Application.Auth;
+using CadastroDeUsuarios.Application.AutoMapper.Mappings;
 using CadastroDeUsuarios.Application.Interfaces;
 using CadastroDeUsuarios.Application.ServiceResponse;
 using CadastroDeUsuarios.Domain.Entity;
@@ -11,7 +13,7 @@ public class UsuarioController : ControllerBase
 {
     private readonly IUsuarioService _usuarioService;
 
-    public UsuarioController(IUsuarioService usuarioService)
+    public UsuarioController(IUsuarioService usuarioService, IMapper mapper)
     {
         _usuarioService = usuarioService;
     }
@@ -48,7 +50,7 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpPost("login")] 
-    public async Task<IActionResult> Login(Usuario userLogin)
+    public async Task<IActionResult> Login(UsuarioLoginRequestContract userLogin)
     {
         var user = await _usuarioService.Obter(userLogin.Email, userLogin.Senha);
 
