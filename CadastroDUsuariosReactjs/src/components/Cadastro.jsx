@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import RequestAPI from '../Api/RquicisaoPostAPI';
 import { Link } from 'react-router-dom';
-//import React from 'react';
 
 const Cadastro = () => {
   const [email, setEmail] = useState("");
@@ -15,7 +14,13 @@ const Cadastro = () => {
     Senha: senha
   }
   
-  const navigate = useNavigate(); // Declare navigate
+  const navigate = useNavigate(); 
+  
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      EfetuarRequicisao();
+    }
+  };
 
   function EfetuarRequicisao(e) {
     e.preventDefault();
@@ -25,26 +30,27 @@ const Cadastro = () => {
       alert("Sendo redirecionado para o Login...")
       console.log(response.data)
         navigate("/login")
-        // Handle successful login here
+
       })
       .catch(error => {
+        if(email === "" || senha === "")
+        {
+          alert("Erro! Verifique se preencheu todos os campos.");
+        }
         if (error.response && error.response.status === 404) {
-          alert("Usuário não encontrado. Verifique suas credenciais.");
+          alert("Erro! Verifique suas credenciais.");
           setEmail("");
           setSenha("");
         } else {
-          // Handle other errors if needed
-          console.error("Erro na requisição:", error);
+
+          alert("Erro na requisição, tente novamente mais tarde.");
           setEmail("");
           setSenha("");
         }
       });
   }
-    //navigate("/User")
+
   
-
-  // Rest of the code ...
-
 
   return (
     <div className='container'>
@@ -63,6 +69,7 @@ const Cadastro = () => {
         type="text"
         placeholder="Senha"
         className="number"
+        onKeyDown={handleKeyDown}
       />
 
 

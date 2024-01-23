@@ -13,7 +13,9 @@ const AlterarSenha = () => {
 
   const token = localStorage.getItem('token');
   const headers = {
-    Authorization: `Bearer ${token}`,
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
   };
 
   const body = {
@@ -24,10 +26,17 @@ const AlterarSenha = () => {
 
   const navigate = useNavigate();
 
+  
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      efetuarRequisicao();
+    }
+  };
+
   useEffect(() => {
-    // Defina o estado inicial do e-mail quando o componente é montado
-    setEmail(usuario || ''); // Se "usuario" for null, usa uma string vazia
-  }, [usuario]); // Execute sempre que "usuario" mudar
+    
+    setEmail(usuario || ''); 
+  }, [usuario]);
 
 
   async function efetuarRequisicao(e) {
@@ -39,8 +48,10 @@ const AlterarSenha = () => {
       navigate('/User');
     } catch (error) {
       console.error('Erro na requisição:', error);
-      // Trate os erros conforme necessário
+      
       alert('Erro ao alterar a senha. Tente novamente mais tarde.');
+      setSenhaAtual("")
+      setNovaSenha("")
     }
   }
 
@@ -60,15 +71,16 @@ const AlterarSenha = () => {
         value={senha}
         onChange={(e) => setSenhaAtual(e.target.value)}
         type="password"
-        placeholder="Senha Atual"
+        placeholder="Nova Senha"
         className="number"
       />
       <input
         value={novaSenha}
         onChange={(e) => setNovaSenha(e.target.value)}
         type="password"
-        placeholder="Nova Senha"
+        placeholder="Confirmar Nova Senha"
         className="number"
+        onKeyDown={handleKeyDown}
       />
 
       <button onClick={efetuarRequisicao}>Alterar Senha</button>

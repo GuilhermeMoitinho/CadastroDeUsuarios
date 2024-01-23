@@ -19,11 +19,18 @@ const Login = () => {
     alert("Efetue seu Login!");
   }, []);
   
+  let redirect = useNavigate();
 
-  let redirect = new useNavigate();
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      EfetuarRequicisao();
+    }
+  };
 
   function EfetuarRequicisao(e) {
-    e.preventDefault();
+    if (e) {
+      e.preventDefault();
+    }
 
     RequestAPI(URL, body)
       .then(response => {
@@ -38,13 +45,16 @@ const Login = () => {
         // Handle successful login here
       })
       .catch(error => {
+        if (email === "" || senha === "") {
+          alert("Erro! Verifique se preencheu todos os campos.");
+        }
         if (error.response && error.response.status === 500) {
           alert("Usuário não encontrado. Verifique suas credenciais.");
           setEmail("");
           setSenha("");
         } else {
           // Handle other errors if needed
-          console.error("Erro na requisição:", error);
+          alert("Verifique suas credenciais, usuários pode não existir.", error);
           setEmail("");
           setSenha("");
         }
@@ -68,6 +78,7 @@ const Login = () => {
         type="password"
         placeholder="Senha"
         className="number"
+        onKeyDown={handleKeyDown}
       />
 
       <button onClick={EfetuarRequicisao}>Enviar</button>

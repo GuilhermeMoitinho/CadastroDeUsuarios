@@ -24,8 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           path="/AlterarSenha"
           element={<PrivateRoute element={<AlterarSenha />} />}
         />
-       
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

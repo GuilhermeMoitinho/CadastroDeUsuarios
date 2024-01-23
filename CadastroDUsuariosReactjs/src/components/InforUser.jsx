@@ -28,7 +28,7 @@ const InforUser = () => {
   }, []);
 
   useEffect(() => {
-      console.log(dados); // mostrará o array com os dados da API
+      console.log(dados);
   }, [dados]);
 
 
